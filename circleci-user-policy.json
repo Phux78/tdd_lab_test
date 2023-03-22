@@ -18,7 +18,7 @@
 				"lambda:UpdateFunctionCode"            
 			],            
 			"Resource": [                
-				"arn:aws:lambda:us-east-2:781717360160:function:myFunction"            
+				"arn:aws:lambda:us-east-2:781717360160:function:fastapi"            
 			]        
 		}
 	]
