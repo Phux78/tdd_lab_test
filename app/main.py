@@ -7,12 +7,11 @@ app = FastAPI()
 def read_root():
     return {"Hello": "Worlddd"}
 
+@app.get("/callname/{name}")
+def read_item(name: str = None):
+    return {"hello": name}
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
-
-@app.get("/hello/{name}")
+@app.post("/callname/")
 def read_item(name: str = None):
     return {"hello": name}
 
